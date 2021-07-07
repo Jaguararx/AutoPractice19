@@ -1,0 +1,17 @@
+{
+  "$schema": "ReportPortal.config.schema",
+  "enabled": true,
+  "server": {
+    "url": "http://127.0.0.1:8080/api/v1",
+    "project": "default_personal",
+    "authentication": {
+      "uuid": "a04c2938-16c0-4900-be8a-3d11f7dde10d"
+    }
+  },
+  "launch": {
+    "name": "COE SpecFlow Demo Launch",
+    "description": "COE Test Description",
+    "debugMode": true,
+    "attributes": [ "COE Example" ]
+  }
+}

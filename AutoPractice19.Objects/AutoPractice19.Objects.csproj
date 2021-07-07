@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\COE.Core.Objects\COE.Core.Objects.csproj" />
+    <ProjectReference Include="..\COE.Core.Visual\COE.Core.Visual.csproj" />
+    <ProjectReference Include="..\COE.Core\COE.Core.csproj" />
+  </ItemGroup>
+
+</Project>

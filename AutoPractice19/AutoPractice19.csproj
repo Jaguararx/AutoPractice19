@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+    <PackageReference Include="Noksa.NUnit.Allure" Version="3.2.0" />
+    <PackageReference Include="ReportPortal.Client" Version="3.0.5" />
+    <PackageReference Include="ReportPortal.Extensions.Selenium" Version="1.0.1" />
+    <PackageReference Include="ReportPortal.NUnit" Version="4.1.0" />
+    <PackageReference Include="ReportPortal.SpecFlow" Version="3.0.2" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="91.0.4472.1900" />
+    <PackageReference Include="SpecFlow" Version="3.3.74" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.3.74" />
+    <PackageReference Include="SpecFlow.NUnit.Runners" Version="3.3.74" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.3.74" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AutoPractice19.Objects\AutoPractice19.Objects.csproj" />
+    <ProjectReference Include="..\COE.Core.Objects\COE.Core.Objects.csproj" />
+    <ProjectReference Include="..\COE.Core.Visual\COE.Core.Visual.csproj" />
+    <ProjectReference Include="..\COE.Core\COE.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="allureConfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ReportPortal.config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
